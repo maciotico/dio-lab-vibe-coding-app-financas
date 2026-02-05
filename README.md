@@ -1,31 +1,8 @@
-# 💸 App de Organização de Finanças Pessoais com Vibe Coding
+# 💸 App de Finança Pessoal do Maciótico com Vibe Coding
 
-Aprenda a **criar soluções com IA** de forma criativa, guiando ferramentas como o **Copilot** e o **Lovable** com uma comunicação simples e natural. O foco é desenvolver o conceito de um **App de Organização de Finanças Pessoais**, mas, acima de tudo, aprender o **jeito Vibe de programar com IA**.
+PRD- APP DE ORGANIZAÇÃO DE FINANCEIRA COM CONVERSA NATURAL 
 
-## ✨ O que é Vibe Coding
-
-**Vibe Coding** é uma forma leve e criativa de desenvolver com IA, baseada em **conversas naturais e bem estruturadas**. Você não precisa escrever código linha por linha. Em vez disso, aprende a **guiar a IA** descrevendo suas ideias de forma clara, com **intenção e contexto**. Em outras palavras:
-
-> Você mostra a vibe da sua ideia e a IA transforma em solução (ou em um caminho para ela).
-
-## 🎯 Desafio
-
-Problema: Muitas pessoas não conseguem manter um controle financeiro porque os aplicativos exigem muita entrada de dados manual, e a criação de orçamentos é vista como algo tedioso. 
-
-Precisamos de uma solução que permita **controlar as finanças por meio de uma conversa simples**, com **agentes de IA** capazes de criar **planos de economia personalizados e automatizados**. Você deve utilizar as ideias de **Vibe Coding** e **MVP (Produto Mínimo Viável)** para desenvolver o **conceito de um aplicativo** que resolva o problema citado.
-
-> [!IMPORTANT]
-> Você **não precisa construir o código**! O foco está em **usar a IA como sua parceira criativa**, transformando boas ideias e prompts em conceitos funcionais que simulam um produto real.
-
-## 🪄 Etapas do Desafio
-
-### 1. Saber o que Pedir é a Chave! Otimize seus Prompts!
-
-Antes de pedir para a IA "criar um app", é importante definir com clareza o que você quer construir e por quê. Para isso, você vai criar um **PRD (Product Requirements Document)** simplificado, uma especificação que serve como _briefing_ para a IA entender sua ideia.
-
-Um bom PRD deve descrever o problema, quem será beneficiado, as principais funcionalidades e o que você espera que a IA entregue. Use o modelo abaixo como ponto de partida e adapte conforme o seu estilo:
-
-```txt
+```markdown
 # Contexto
 Quero criar um aplicativo de Organização de Finanças Pessoais que funcione por meio de conversas com o usuário.  
 A ideia é facilitar o controle financeiro de forma simples e natural, sem formulários manuais ou planilhas complexas.
@@ -43,6 +20,7 @@ Pessoas que querem começar a organizar suas finanças de forma prática e sem c
 3. Definir e acompanhar metas financeiras.  
 4. Receber dicas de economia do “Agente Financeiro”.  
 5. Visualizar relatórios simples e personalizados.
+6. Poder alternar o visual do app entre "Light Mode" e "Dark Mode"
 
 # Entregável da IA
 Gerar um plano de MVP com as principais telas, recursos necessários e um esboço de validação inicial.  
@@ -70,16 +48,73 @@ Durante essa etapa, você pode orientar a IA para três entregas principais:
 
 ### 3. Entregando o Desafio na DIO
 
-Finalize seu projeto criando um **repositório no GitHub** (pode ser um **fork** deste).  
-No README do seu repositório, inclua:
+Interações com o Lovable:
+  > Crie um App de Finanças com base no seguinte PRD(PRODUCT REQUIREMENTS DOCUMENT): {PRD}
+  > Ao clicar no relatório, adicione um dashboard de gráfico de pizza
+  > Quero poder adicionar e remover metas
+  > Adicione a funcionalidade de editar metas existentes
+  > Faça o que eu ganho ou perco ser adicionado no saldo atual
+
+Resultado final no Lovable: https://bate-papo-contas.lovable.app/
+
+<img width="1208" height="1375" alt="bate-papo-contas lovable app_ (1)" src="https://github.com/user-attachments/assets/47d9e72f-1ea9-48e9-b7b5-421e55cb4da6" />
+
+
+# 💰 FinançaChat
+
+> Seu assistente financeiro pessoal baseado em inteligência artificial e conversação natural.
+
+![FinançaChat Preview](bate-papo-contas.lovable.app_(1).png)
+*(Substitua o caminho da imagem acima caso renomeie o arquivo na pasta do projeto)*
+
+## 📋 Sobre o Projeto
+
+O **FinançaChat** é uma aplicação de gestão financeira que simplifica o controle de gastos e receitas através de uma interface de chat intuitiva. Ao invés de preencher formulários complexos e planilhas manuais, o usuário interage com o sistema usando linguagem natural ou comandos de voz, como se estivesse conversando com um consultor financeiro pessoal.
+
+O objetivo é remover a fricção do registro financeiro diário, permitindo inputs rápidos como *"Gastei 50 reais no almoço"* e oferecendo feedback visual imediato sobre a saúde financeira do usuário.
+
+---
+
+## ✨ Funcionalidades Principais
+
+### 💬 1. Interface Conversacional (NLP)
+O coração do aplicativo. O usuário não precisa categorizar manualmente cada entrada.
+- **Processamento de Linguagem Natural:** Interpreta frases como *"Recebi R$500 de freelance"* ou *"Gastei R$50 no almoço"*.
+- **Comandos de Voz:** Suporte para entrada de dados via microfone (speech-to-text).
+- **Consultas Inteligentes:** O assistente responde a perguntas sobre o histórico, ex: *"Quanto gastei com comida esse mês?"*.
+
+### 📊 2. Dashboard Financeiro
+Visão geral instantânea da saúde financeira.
+- **Saldo em Tempo Real:** Exibição destacada do saldo atual.
+- **Balanço Mensal:** Indicadores visuais claros de **Receitas (Entradas)** vs **Despesas (Saídas)**.
+- **Ações Rápidas:** Botões de atalho para inserção manual e navegação.
+
+### 🎯 3. Gestão de Metas (Gamificação)
+Ferramentas para planejamento de médio e longo prazo.
+- **Criação de Objetivos:** Definição de metas como "Reserva de Emergência" ou "Viagem".
+- **Acompanhamento Visual:** Barras de progresso percentual para cada meta.
+- **Prazos:** Definição de datas-alvo para conclusão dos objetivos.
+
+### 📝 4. Histórico e Categorização
+- **Feed de Transações:** Lista cronológica das últimas movimentações.
+- **Smart Tagging:** Categorização automática com ícones intuitivos (🏠 Moradia, 🍔 Alimentação, 🚗 Transporte, etc.).
+- **Identificação de Fonte:** Distinção clara entre tipos de transação (Salário, Freelance, Serviços, etc.).
+
+### 🎨 5. UX/UI Moderna
+- **Dark Mode:** Interface escura para conforto visual e economia de bateria.
+- **Design Responsivo:** Otimizado para uso mobile, mas funcional em desktop.
+- **Feedback Visual:** Uso de cores semânticas (Verde/Vermelho) para facilitar a leitura rápida.
 
 - Seu **prompt final** (PRD);  
 - Prints ou pequenos vídeos das interações com a IA;  
 - Um resumo do que o seu **App de Finanças Pessoais** faz;  
 - Uma breve **reflexão sobre o processo**:
-  - O que funcionou bem?  
-  - O que não funcionou como o esperado?  
+  - O que funcionou bem?
+       R= O refinamento do prompt fornecido pelo projeto do github ajudou muito, e depois só tive que fazer alguns ajustes pra ficar mais parecido com o que tinha em mente, realmente dá para visualizar melhor um projeto que temos em mente, a linguagem neural é incrível.
+  - O que não funcionou como o esperado?
+       R= Até agora não vi um dashboard no meu App, apesar de ter pedido.
   - O que aprendeu sobre conversar com IAs?
+       R= Engenharia de Prompt. O vibe coding para o leigo ou dev iniciante será um bom aliado na hora de criar e refinar seus Apps e Serviços, além de poupar muito tempo.
 
 > [!TIP]
 > Publique seu repositório e compartilhe o link na plataforma da DIO! Sua entrega é a prova de que você domina o raciocínio de Vibe Coding, mesmo sem escrever uma única linha de código.
